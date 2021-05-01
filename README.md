@@ -1,12 +1,12 @@
-# Object-Oriented Scraping
+# Scraping Code-Along
 
-## Objectives
+## Learning Goals
 
-* Scrape a web page's HTML using Nokogiri.
-* Use scraped data to give attributes to Ruby objects.
-* Write an object-oriented Scraper class.
+* Scrape a web page's HTML using Nokogiri
+* Use scraped data to give attributes to Ruby objects
+* Write an object-oriented Scraper class
 
-## Overview
+## Introduction
 
 One of the most common use-cases for web scraping involves you, the programmer,
 scraping data that you will then use to instantiate your own Ruby objects. In
