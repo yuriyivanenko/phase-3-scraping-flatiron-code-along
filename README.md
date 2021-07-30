@@ -66,7 +66,7 @@ Go ahead and run the test suite again. Now we should be passing all of our
 instance method tests! But not our class method tests...
 
 Let's write the `.all` and `.reset_all` class methods. You should be familiar
-with the usage of the `.all` class method at this point &mdash; remember that
+with the usage of the `.all` class method at this point — remember that
 every time an instance of the class is initialized, we should push it into the
 `@@all` class variable. Get these tests passing with the following code:
 
