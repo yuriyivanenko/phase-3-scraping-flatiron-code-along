@@ -163,7 +163,7 @@ the file. We are ready to use Nokogiri and open-uri to get our HTML. Add the
 following line to your `.get_page` method:
 
 ```rb
-doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
+doc = Nokogiri::HTML(URI.open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
 ```
 
 Then, we'll place a `binding.pry` on the next line. At the bottom of the file,
@@ -181,8 +181,7 @@ require_relative './course.rb'
 class Scraper
 
   def get_page
-      doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
-
+      doc = Nokogiri::HTML(URI.open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
       binding.pry
   end
 
@@ -401,7 +400,7 @@ class Scraper
 
   def get_page
 
-    doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
+    doc = Nokogiri::HTML(URI.open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
 
     doc.css(".post").each do |post|
       course = Course.new
@@ -450,7 +449,7 @@ class Scraper
 
   def get_page
 
-    Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
+    Nokogiri::HTML(URI.open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
 
     #doc.css(".post").each do |post|
       #course = Course.new
@@ -523,7 +522,7 @@ require_relative './course.rb'
 class Scraper
 
   def get_page
-    Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
+    Nokogiri::HTML(URI.open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
   end
 
   def get_courses
